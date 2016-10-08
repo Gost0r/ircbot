@@ -10,8 +10,8 @@ public class Main {
 		irc.addChannel("#example");
 		irc.setQauth("example", "password");
 		
-		Thread pickupThread = new Thread(irc);
-		pickupThread.setName("ircbotThread");
-		pickupThread.start();
+		Thread ircThread = new Thread(irc);
+		ircThread.setName("ircbotThread");
+		ircThread.start();
 	}
 }
